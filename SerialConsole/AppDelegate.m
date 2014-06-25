@@ -13,6 +13,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+//    [self redirectConsoleLogToDocumentFolder];
     return YES;
 }
 							
@@ -42,5 +43,16 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (void)redirectConsoleLogToDocumentFolder
+{
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES);
+    NSString *log = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"ns.log"];
+    NSFileManager *fileMgr = [NSFileManager defaultManager];
+    [fileMgr removeItemAtPath:log error:nil];
+//    freopen([log fileSystemRepresentation], "a+", stderr);
+}
+
 
 @end

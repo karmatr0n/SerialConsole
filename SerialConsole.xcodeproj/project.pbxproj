@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA6F15A7185F456D008375D7 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F15A6185F456D008375D7 /* LogViewController.m */; };
 		FA85A044185E9D2500F02490 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA85A043185E9D2500F02490 /* Foundation.framework */; };
 		FA85A046185E9D2500F02490 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA85A045185E9D2500F02490 /* CoreGraphics.framework */; };
 		FA85A048185E9D2500F02490 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA85A047185E9D2500F02490 /* UIKit.framework */; };
@@ -21,6 +22,8 @@
 		FA85A065185E9D2500F02490 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA85A047185E9D2500F02490 /* UIKit.framework */; };
 		FA85A06D185E9D2500F02490 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA85A06B185E9D2500F02490 /* InfoPlist.strings */; };
 		FA85A06F185E9D2500F02490 /* SerialConsoleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA85A06E185E9D2500F02490 /* SerialConsoleTests.m */; };
+		FADE642A185E9E1E00ADFDCC /* libRscMgrUniv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FADE6429185E9E1E00ADFDCC /* libRscMgrUniv.a */; };
+		FADE642D185E9E7E00ADFDCC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADE642C185E9E7E00ADFDCC /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA6F15A5185F456D008375D7 /* LogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
+		FA6F15A6185F456D008375D7 /* LogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
 		FA85A040185E9D2500F02490 /* SerialConsole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SerialConsole.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA85A043185E9D2500F02490 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA85A045185E9D2500F02490 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +58,11 @@
 		FA85A06A185E9D2500F02490 /* SerialConsoleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SerialConsoleTests-Info.plist"; sourceTree = "<group>"; };
 		FA85A06C185E9D2500F02490 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA85A06E185E9D2500F02490 /* SerialConsoleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerialConsoleTests.m; sourceTree = "<group>"; };
+		FADE6426185E9E1E00ADFDCC /* redparkSerial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = redparkSerial.h; sourceTree = "<group>"; };
+		FADE6427185E9E1E00ADFDCC /* RscMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RscMgr.h; sourceTree = "<group>"; };
+		FADE6429185E9E1E00ADFDCC /* libRscMgrUniv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRscMgrUniv.a; sourceTree = "<group>"; };
+		FADE642B185E9E7E00ADFDCC /* SerialConsole.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SerialConsole.entitlements; sourceTree = "<group>"; };
+		FADE642C185E9E7E00ADFDCC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA85A046185E9D2500F02490 /* CoreGraphics.framework in Frameworks */,
+				FADE642A185E9E1E00ADFDCC /* libRscMgrUniv.a in Frameworks */,
+				FADE642D185E9E7E00ADFDCC /* AudioToolbox.framework in Frameworks */,
 				FA85A048185E9D2500F02490 /* UIKit.framework in Frameworks */,
 				FA85A044185E9D2500F02490 /* Foundation.framework in Frameworks */,
 			);
@@ -101,6 +113,7 @@
 		FA85A042185E9D2500F02490 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FADE642C185E9E7E00ADFDCC /* AudioToolbox.framework */,
 				FA85A043185E9D2500F02490 /* Foundation.framework */,
 				FA85A045185E9D2500F02490 /* CoreGraphics.framework */,
 				FA85A047185E9D2500F02490 /* UIKit.framework */,
@@ -112,11 +125,16 @@
 		FA85A049185E9D2500F02490 /* SerialConsole */ = {
 			isa = PBXGroup;
 			children = (
+				FADE642B185E9E7E00ADFDCC /* SerialConsole.entitlements */,
+				FADE6425185E9E1E00ADFDCC /* inc */,
+				FADE6428185E9E1E00ADFDCC /* lib */,
 				FA85A052185E9D2500F02490 /* AppDelegate.h */,
 				FA85A053185E9D2500F02490 /* AppDelegate.m */,
 				FA85A055185E9D2500F02490 /* Main.storyboard */,
 				FA85A058185E9D2500F02490 /* ViewController.h */,
 				FA85A059185E9D2500F02490 /* ViewController.m */,
+				FA6F15A5185F456D008375D7 /* LogViewController.h */,
+				FA6F15A6185F456D008375D7 /* LogViewController.m */,
 				FA85A05B185E9D2500F02490 /* Images.xcassets */,
 				FA85A04A185E9D2500F02490 /* Supporting Files */,
 			);
@@ -150,6 +168,23 @@
 				FA85A06B185E9D2500F02490 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FADE6425185E9E1E00ADFDCC /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				FADE6426185E9E1E00ADFDCC /* redparkSerial.h */,
+				FADE6427185E9E1E00ADFDCC /* RscMgr.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		FADE6428185E9E1E00ADFDCC /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				FADE6429185E9E1E00ADFDCC /* libRscMgrUniv.a */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +234,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Alejandro Juárez Robles";
 				TargetAttributes = {
+					FA85A03F185E9D2500F02490 = {
+						DevelopmentTeam = P9YUHA5G3Z;
+					};
 					FA85A060185E9D2500F02490 = {
 						TestTargetID = FA85A03F185E9D2500F02490;
 					};
@@ -252,6 +290,7 @@
 				FA85A05A185E9D2500F02490 /* ViewController.m in Sources */,
 				FA85A054185E9D2500F02490 /* AppDelegate.m in Sources */,
 				FA85A050185E9D2500F02490 /* main.m in Sources */,
+				FA6F15A7185F456D008375D7 /* LogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,10 +417,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = SerialConsole/SerialConsole.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SerialConsole/SerialConsole-Prefix.pch";
 				INFOPLIST_FILE = "SerialConsole/SerialConsole-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/alex/Projects/iOS/SerialConsole/SerialConsole/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,10 +438,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = SerialConsole/SerialConsole.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SerialConsole/SerialConsole-Prefix.pch";
 				INFOPLIST_FILE = "SerialConsole/SerialConsole-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/alex/Projects/iOS/SerialConsole/SerialConsole/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +515,7 @@
 				FA85A074185E9D2500F02490 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA85A075185E9D2500F02490 /* Build configuration list for PBXNativeTarget "SerialConsoleTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +524,7 @@
 				FA85A077185E9D2500F02490 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
